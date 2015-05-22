@@ -53,12 +53,20 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlignmentButton.cs">
       <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="JizzmarkerHelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JizzmarkerHelpForm.Designer.cs">
+      <DependentUpon>JizzmarkerHelpForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MarkerSettings.cs" />
     <Compile Include="IJizzmarkerForm.cs" />
@@ -77,6 +85,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="JizzmarkerForm.resx">
       <DependentUpon>JizzmarkerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JizzmarkerHelpForm.it.resx">
+      <DependentUpon>JizzmarkerHelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JizzmarkerHelpForm.resx">
+      <DependentUpon>JizzmarkerHelpForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

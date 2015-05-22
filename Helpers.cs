@@ -193,43 +193,46 @@ namespace Iiriya.Apps.Jizzmarker
         {
             if (settings != null)
             {
-                using (Image img = new Bitmap(path))
+                if (File.Exists(path))
                 {
-                    Size newSize = settings.ResizeImage ? img.Size : GetSize(img.Size, settings.ImageSize);
-                    using (Image background = new Bitmap(img, newSize))
+                    using (Image img = new Bitmap(path))
                     {
-                        if (logo != null && settings.LogoOpacity > 0)
+                        Size newSize = settings.ResizeImage ? img.Size : GetSize(img.Size, settings.ImageSize);
+                        using (Image background = new Bitmap(img, newSize))
                         {
-                            Size logoSize = GetLogoSize(settings.LogoPosizion, newSize, logo, settings.LogoMargin, settings.LogoSize);
-                            using (Graphics graphics = Graphics.FromImage(background))
+                            if (logo != null && settings.LogoOpacity > 0)
                             {
-                                graphics.DrawImage(background, new Point(0, 0));
-
-                                Point pos = GetLogoPosition(settings.LogoPosizion, logoSize, newSize, settings.LogoMargin);
-
-                                if (settings.LogoOpacity < 100)
+                                Size logoSize = GetLogoSize(settings.LogoPosizion, newSize, logo, settings.LogoMargin, settings.LogoSize);
+                                using (Graphics graphics = Graphics.FromImage(background))
                                 {
-                                    using (ImageAttributes attributes = new ImageAttributes())
+                                    graphics.DrawImage(background, new Point(0, 0));
+
+                                    Point pos = GetLogoPosition(settings.LogoPosizion, logoSize, newSize, settings.LogoMargin);
+
+                                    if (settings.LogoOpacity < 100)
                                     {
-                                        ColorMatrix matrix = new ColorMatrix();
-                                        matrix.Matrix33 = settings.LogoOpacity * 0.01f;
-                                        attributes.SetColorMatrix(matrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
-                                        graphics.DrawImage(logo, new Rectangle(pos, logoSize), 0, 0, logo.Width, logo.Height, GraphicsUnit.Pixel, attributes);
+                                        using (ImageAttributes attributes = new ImageAttributes())
+                                        {
+                                            ColorMatrix matrix = new ColorMatrix();
+                                            matrix.Matrix33 = settings.LogoOpacity * 0.01f;
+                                            attributes.SetColorMatrix(matrix, ColorMatrixFlag.Default, ColorAdjustType.Bitmap);
+                                            graphics.DrawImage(logo, new Rectangle(pos, logoSize), 0, 0, logo.Width, logo.Height, GraphicsUnit.Pixel, attributes);
+                                        }
                                     }
-                                }
-                                else
-                                {
-                                    graphics.DrawImage(logo, new Rectangle(pos, logoSize), 0, 0, logo.Width, logo.Height, GraphicsUnit.Pixel);
-                                }
+                                    else
+                                    {
+                                        graphics.DrawImage(logo, new Rectangle(pos, logoSize), 0, 0, logo.Width, logo.Height, GraphicsUnit.Pixel);
+                                    }
 
-                                graphics.Save();
+                                    graphics.Save();
+                                }
                             }
-                        }
 
-                        using (EncoderParameters parameters = new EncoderParameters(1))
-                        {
-                            parameters.Param[0] = new EncoderParameter(Encoder.Quality, settings.Quality);
-                            background.Save(Path.Combine(outputFolder, Path.GetFileNameWithoutExtension(path) + "." + GetImageExtension(settings.OutputFormat)), GetEncoderInfo(GetImageFormat(settings.OutputFormat)), parameters);
+                            using (EncoderParameters parameters = new EncoderParameters(1))
+                            {
+                                parameters.Param[0] = new EncoderParameter(Encoder.Quality, settings.Quality);
+                                background.Save(Path.Combine(outputFolder, Path.GetFileNameWithoutExtension(path) + "." + GetImageExtension(settings.OutputFormat)), GetEncoderInfo(GetImageFormat(settings.OutputFormat)), parameters);
+                            }
                         }
                     }
                 }
@@ -389,6 +392,24 @@ namespace Iiriya.Apps.Jizzmarker
                 string t = total == null ? string.Empty : string.Concat(total, " files");
                 string c = current == null ? string.Empty : string.Concat(current, '/');
                 label.Text = c + t;
+            }
+        }
+
+        /// <summary>
+        /// Determines whether the given <paramref name="path"/> is correct and the given <paramref name="opacity"/> is is bigger than 0.
+        /// </summary>
+        /// <param name="path">Required parameter. Type: <see cref="System.String">String</see>. The path of the image to load.</param>
+        /// <param name="opacity">Required parameter. Type: <see cref="System.Int32">Integer</see>. The opacity percentage.</param>
+        /// <returns>Type: <see cref="System.Boolean">Boolean</see>. "True" if the given <paramref name="path"/> is correct and if <paramref name="opacity"/> is bigger than 0, otherwise "False".</returns>
+        internal static bool CheckRenderImage(string path, int opacity)
+        {
+            if (!string.IsNullOrWhiteSpace(path) && opacity > 0)
+            {
+                return File.Exists(path);
+            }
+            else
+            {
+                return false;
             }
         }
         #endregion

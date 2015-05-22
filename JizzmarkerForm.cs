@@ -26,7 +26,6 @@ namespace Iiriya.Apps.Jizzmarker
     using System;
     using System.ComponentModel;
     using System.Drawing;
-    using System.Globalization;
     using System.Windows.Forms;
     #endregion
 
@@ -122,7 +121,7 @@ namespace Iiriya.Apps.Jizzmarker
             this.LogoSizeBar.ValueChanged += this.LogoSizeBarValueChanged;
             this.OpacityBar.ValueChanged += this.OpacityBarValueChanged;
             this.FormatComboBox.SelectedValueChanged += this.FormatChanged;
-
+            
             this.QualityBar.Value = (int)this.quality;
             this.MarginBar.Value = this.logoMargin;
             this.LogoSizeBar.Value = this.logoSize;
@@ -391,13 +390,13 @@ namespace Iiriya.Apps.Jizzmarker
                 this.isBusy = true;
                 string logoPath = this.LogoTextBox.Text;
 
-                if ((!string.IsNullOrWhiteSpace(logoPath) && this.LogoOpacity > 0) || this.ResizeImage)
+                if (Helpers.CheckRenderImage(logoPath, this.LogoOpacity) || this.ResizeImage)
                 {
                     MarkerSettings settings = this.CreateMarkerSettings();
                     string[] images = this.files;
                     string destination = this.DestinationTextBox.Text;
                     this.filesLoaded = images.Length;
-                    using (Image logo = !string.IsNullOrWhiteSpace(logoPath) ? Image.FromFile(logoPath) : null)
+                    using (Image logo = Helpers.CheckRenderImage(logoPath, this.LogoOpacity) ? Image.FromFile(logoPath) : null)
                     {
                         for (int i = 0; i < images.Length; i++)
                         {
@@ -605,6 +604,28 @@ namespace Iiriya.Apps.Jizzmarker
             {
                 this.SubmitButton.ForeColor = Color.Red;
                 this.SubmitButton.Enabled = false;
+            }
+        }
+
+        /// <summary>
+        /// Processes a command key.
+        /// </summary>
+        /// <param name="msg">Required parameter. Type: <see cref="System.Windows.Forms.Message">Message</see>. A <see cref="System.Windows.Forms.Message">Message</see>, passed by reference, that represents the Win32 message to process.</param>
+        /// <param name="keyData">Required parameter. Type: <see cref="System.Windows.Forms.Keys">Keys</see>. One of the <see cref="System.Windows.Forms.Keys">Keys</see> values that represents the key to process.</param>
+        /// <returns>Type: <see cref="System.Boolean">Boolean</see>. "True" if the keystroke was processed and consumed by the control; otherwise, "False" to allow further processing.</returns>
+        protected override bool ProcessCmdKey(ref Message msg, Keys keyData)
+        {
+            switch (keyData)
+            {
+                case Keys.F1:
+                    using (JizzmarkerHelpForm help = new JizzmarkerHelpForm())
+                    {
+                        help.ShowDialog(this);
+                    }
+
+                    return true;
+                default:
+                    return base.ProcessCmdKey(ref msg, keyData);
             }
         }
         #endregion

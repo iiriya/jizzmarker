@@ -117,53 +117,7 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="SubmitButton.Text" xml:space="preserve">
-    <value>VAI!</value>
-  </data>
-  <data name="SourceButton.Text" xml:space="preserve">
-    <value>Sorgente</value>
-  </data>
-  <data name="DestinationButton.Text" xml:space="preserve">
-    <value>Destinazione</value>
-  </data>
-  <data name="LogoOpenFileDialog.Filter" xml:space="preserve">
-    <value>Immagine|*.png;*.bmp;*.jpg;*.jpeg;*.jpe;*.tif;*.tiff;*.gif|Immagine PNG|*.png|Immagine Bitmap|*.bmp|Immagine JPEG|*.jpg;*.jpeg;*.jpe|Immagine TIFF|*.tif;*.tiff|Immagine GIF|*.gif</value>
-  </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="ResizeCheckBox.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 17</value>
-  </data>
-  <data name="ResizeCheckBox.Text" xml:space="preserve">
-    <value>Ridimensiona</value>
-  </data>
-  <data name="QualityBarLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 13</value>
-  </data>
-  <data name="QualityBarLabel.Text" xml:space="preserve">
-    <value>Qualità</value>
-  </data>
-  <data name="MarginBarLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>45, 13</value>
-  </data>
-  <data name="MarginBarLabel.Text" xml:space="preserve">
-    <value>Margine</value>
-  </data>
-  <data name="LogoSizeBarLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>89, 13</value>
-  </data>
-  <data name="LogoSizeBarLabel.Text" xml:space="preserve">
-    <value>Dimensione Logo</value>
-  </data>
-  <data name="OutputFormatLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>91, 13</value>
-  </data>
-  <data name="OutputFormatLabel.Text" xml:space="preserve">
-    <value>Formato di Output</value>
-  </data>
-  <data name="OpacityBarLabel.Size" type="System.Drawing.Size, System.Drawing">
-    <value>44, 13</value>
-  </data>
-  <data name="OpacityBarLabel.Text" xml:space="preserve">
-    <value>Opacità</value>
+  <data name="LicenseLabel.Text" xml:space="preserve">
+    <value>Questo software è rilasciato sotto licenza GNU GPLv3</value>
   </data>
 </root>

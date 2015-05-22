@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="&gt;&gt;LeftPostionButton.Type" xml:space="preserve">
-    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=363765dc69f5e191</value>
   </data>
   <data name="&gt;&gt;LogoTextBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -226,7 +226,7 @@
     <value>87, 21</value>
   </data>
   <data name="&gt;&gt;BottomPostionButton.Type" xml:space="preserve">
-    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=363765dc69f5e191</value>
   </data>
   <data name="FormatComboBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>12, 131</value>
@@ -244,7 +244,7 @@
     <value>LogoOpenFileDialog</value>
   </data>
   <data name="&gt;&gt;BottomRightPostionButton.Type" xml:space="preserve">
-    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=363765dc69f5e191</value>
   </data>
   <data name="&gt;&gt;ResizeCheckBox.Type" xml:space="preserve">
     <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -283,7 +283,7 @@
     <value>20</value>
   </data>
   <data name="&gt;&gt;TopRightPostionButton.Type" xml:space="preserve">
-    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=363765dc69f5e191</value>
   </data>
   <data name="&gt;&gt;FilesStatusLabel.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -565,7 +565,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CenterPostionButton.Type" xml:space="preserve">
-    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=363765dc69f5e191</value>
   </data>
   <data name="RightPostionButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -625,7 +625,7 @@
     <value>18, 491</value>
   </data>
   <data name="LogoOpenFileDialog.Filter" xml:space="preserve">
-    <value>PNG Image|*.png</value>
+    <value>Image File|*.png;*.bmp;*.jpg;*.jpeg;*.jpe;*.tif;*.tiff;*.gif|PNG Image|*.png|Bitmap Image|*.bmp|JPEG Image|*.jpg;*.jpeg;*.jpe|TIFF Image|*.tif;*.tiff|GIF Image|*.gif</value>
   </data>
   <data name="ResizeCheckBox.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -715,7 +715,7 @@
     <value>87, 20</value>
   </data>
   <data name="&gt;&gt;BottomLeftPostionButton.Type" xml:space="preserve">
-    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=363765dc69f5e191</value>
   </data>
   <data name="&gt;&gt;SourceButton.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -757,7 +757,7 @@
     <value>False</value>
   </data>
   <data name="&gt;&gt;RightPostionButton.Type" xml:space="preserve">
-    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=363765dc69f5e191</value>
   </data>
   <data name="SourceButton.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
     <value>Flat</value>
@@ -790,7 +790,7 @@
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;TopLeftPostionButton.Type" xml:space="preserve">
-    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=363765dc69f5e191</value>
   </data>
   <data name="ResizeCheckBox.Location" type="System.Drawing.Point, System.Drawing">
     <value>11, 535</value>
@@ -832,7 +832,7 @@
     <value>101, 45</value>
   </data>
   <data name="&gt;&gt;TopPostionButton.Type" xml:space="preserve">
-    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+    <value>Iiriya.Apps.Jizzmarker.AlignmentButton, Iiriya.Apps.Jizzmarker, Version=1.0.0.0, Culture=neutral, PublicKeyToken=363765dc69f5e191</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>6, 13</value>
@@ -1037,6 +1037,9 @@
   </metadata>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>it</value>
   </metadata>
   <metadata name="SaveFolderBrowserDialog.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>212, 17</value>
