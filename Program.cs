@@ -32,7 +32,7 @@ namespace Iiriya.Apps.Jizzmarker
     /// </summary>
     public static class Program
     {
-        #region Program Constructors
+        #region Program Static Methods
         /// <summary>
         /// The default entry point for this application.
         /// </summary>
