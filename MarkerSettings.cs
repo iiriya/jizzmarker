@@ -74,7 +74,7 @@ namespace Iiriya.Apps.Jizzmarker
         private int logoOpacity;
         #endregion
 
-        #region MarkerSettings Contructors
+        #region MarkerSettings Constructors
         /// <summary>
         /// Initializes a new instance of the <see cref="Iiriya.Apps.Jizzmarker.MarkerSettings">MarkerSettings</see> class.
         /// </summary>
