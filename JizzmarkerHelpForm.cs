@@ -33,7 +33,7 @@ namespace Iiriya.Apps.Jizzmarker
     /// </summary>
     public partial class JizzmarkerHelpForm : Form
     {
-        #region JizzmarkerHelpForm Contructors
+        #region JizzmarkerHelpForm Constructors
         /// <summary>
         /// Initializes a new instance of the <see cref="Iiriya.Apps.Jizzmarker.JizzmarkerHelpForm">JizzmarkerHelpForm</see> class.
         /// </summary>
