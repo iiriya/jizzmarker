@@ -91,7 +91,7 @@ namespace Iiriya.Apps.Jizzmarker
         private int? filesCurrent = null;
         #endregion
 
-        #region JizzmarkerForm Contructors
+        #region JizzmarkerForm Constructors
         /// <summary>
         /// Initializes a new instance of the <see cref="Iiriya.Apps.Jizzmarker.JizzmarkerForm">JizzmarkerForm</see> class.
         /// </summary>
